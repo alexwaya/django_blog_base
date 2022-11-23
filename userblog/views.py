@@ -7,7 +7,6 @@ from django.contrib import messages
 
 def usblog(request):
     snipps = Snippet.objects.all()
-
     return render(request, 'index.html', {'snipps' : snipps})
 
 
